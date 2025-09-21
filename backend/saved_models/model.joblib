@@ -1,0 +1,21 @@
+# save_model.py
+
+from sklearn.ensemble import RandomForestClassifier
+from joblib import dump
+import os
+
+# Example data (replace with your own training data)
+X = [[0, 0], [1, 1]]
+y = [0, 1]
+
+# Train a model
+model = RandomForestClassifier()
+model.fit(X, y)
+
+# Make sure the folder exists
+os.makedirs("backend/saved_models", exist_ok=True)
+
+# Save the model
+dump(model, "backend/saved_models/model.joblib")
+
+print("Model saved successfully!")
