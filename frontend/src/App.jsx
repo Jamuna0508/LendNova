@@ -1,0 +1,1 @@
+import React from 'react';import PredictForm from './components/PredictForm';import FraudUpload from './components/FraudUpload';export default ()=> <div><h1>LendNova Demo</h1><PredictForm/><FraudUpload/></div>
