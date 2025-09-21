@@ -7,6 +7,11 @@ MODEL_PATH = os.path.join(os.path.dirname(__file__), 'saved_models', 'model.jobl
 app = Flask(__name__); CORS(app)
 model = joblib.load(MODEL_PATH)
 
+# Home route for testing the deployment
+@app.route('/', methods=['GET'])
+def home():
+    return "LendNova Backend is running!"
+
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json()
