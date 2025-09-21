@@ -8,9 +8,10 @@ app = Flask(__name__); CORS(app)
 model = joblib.load(MODEL_PATH)
 
 # Home route for testing the deployment
-@app.route('/', methods=['GET'])
+@app.route('/')
 def home():
     return "LendNova Backend is running!"
+
 
 @app.route('/predict', methods=['POST'])
 def predict():
