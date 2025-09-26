@@ -1,1 +1,1 @@
-# LendNova Demo\nPrototype AI credit prediction + fraud detection."# LendNova" 
+# LendNova Demo- Prototype AI credit prediction + fraud detection."# LendNova" 
